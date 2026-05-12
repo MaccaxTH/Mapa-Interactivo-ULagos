@@ -25,7 +25,7 @@ label start:
 
     e "Has creado un nuevo juego Ren'Py."
 
-    e "Añade una historia, imágenes y música, ¡y puedes presentarlo al mundo!"
+    e "Añade una historia, imágenes y música, ¡y puedes presentarlo al olaldo!"
 
     # Finaliza el juego:
 
