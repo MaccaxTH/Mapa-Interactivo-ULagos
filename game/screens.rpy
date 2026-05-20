@@ -1627,3 +1627,5 @@ style slider_slider:
 
 screen PantallaInicio():
     add "EntradaPrueba.jpg"
+    text "MAPA INTERACTIVO ULAGOS"
+    text "Click para comenzar"
