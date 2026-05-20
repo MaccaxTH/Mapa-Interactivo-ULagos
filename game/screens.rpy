@@ -1625,3 +1625,5 @@ style slider_slider:
 
 # PAPU INICIO
 
+screen PantallaInicio():
+    
