@@ -1,5 +1,5 @@
 ﻿################################################################################
-## Inicialización | Prueba weonx
+## Inicialización | Prueba weonxgdd
 ################################################################################
 
 ## La sentencia 'init offset' da preferencia a las sentencias de inicialización
