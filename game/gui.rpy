@@ -1,5 +1,5 @@
 ﻿################################################################################
-## Inicialización
+## Inicialización | Prueba weonxgdd
 ################################################################################
 
 ## La sentencia 'init offset' da preferencia a las sentencias de inicialización
@@ -410,7 +410,7 @@ define gui.nvl_button_xalign = 0.0
 
 ## Localización ################################################################
 
-## Esto controla donde se permite un salto de línea. El valor por defecto es
+## Esto controla donde se permite un salto de línea. El valor por defectAWEOXDo es
 ## adecuado para la mayoria de idiomas. Puede encontrar una lista de valores
 ## disponibles en https://www.renpy.org/doc/html/style_properties.html#style-
 ## property-language
