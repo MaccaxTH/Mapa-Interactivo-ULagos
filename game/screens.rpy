@@ -1625,7 +1625,19 @@ style slider_slider:
 
 # PAPU INICIO
 
-screen PantallaInicio():
-    add "EntradaPrueba.jpg"
-    text "MAPA INTERACTIVO ULAGOS"
-    text "Click para comenzar"
+screen pantallainicio():
+    imagemap:
+        ground "Pantalla de Inicio.png"
+        hotspot(121, 632, 429, 70) action Jump("mapabase"):
+            activate_sound "audio/click.mp3"
+screen mapabase():
+    imagemap:
+        ground "Mapa.png"
+        hotspot(1004, 603, 56, 56) action Jump("vicerrectoria"):
+            activate_sound "audio/click.mp3"
+screen vicerrectoria():
+    imagemap:
+        ground "Edificio Vicerrectoría.png"
+        hotspot(1789, 6, 129, 98) action Hide ("vicerrectoria"):
+            activate_sound "audio/click.mp3"
+    
