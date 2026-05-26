@@ -1627,7 +1627,7 @@ style slider_slider:
 
 screen pantallainicio():
     imagemap:
-        ground "Pantalla de Inicio.png"
+        ground "PantallaDeInicio.png"
         hotspot(121, 632, 429, 70) action Jump("mapabase"):
             activate_sound "audio/click.mp3"
 screen mapabase():
