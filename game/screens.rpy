@@ -235,47 +235,10 @@ style choice_button_text is default:
 ## El menú rápido se presenta en el juego para ofrecer fácil acceso a los menus
 ## externos al juego.
 
-screen quick_menu():
+#screen quick_menu():
 
     ## Asegura que esto aparezca en la parte superior de otras pantallas.
-    zorder 100
 
-    if quick_menu:
-
-        hbox:
-            style_prefix "quick"
-            style "quick_menu"
-
-            textbutton _("Atrás") action Rollback()
-            textbutton _("Historial") action ShowMenu('history')
-            textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Guardar") action ShowMenu('save')
-            textbutton _("Guardar R.") action QuickSave()
-            textbutton _("Cargar R.") action QuickLoad()
-            textbutton _("Prefs.") action ShowMenu('preferences')
-
-
-## Este código asegura que la pantalla 'quick_menu' se muestra en el juego,
-## mientras el jugador no haya escondido explícitamente la interfaz.
-init python:
-    config.overlay_screens.append("quick_menu")
-
-default quick_menu = True
-
-style quick_menu is hbox
-style quick_button is default
-style quick_button_text is button_text
-
-style quick_menu:
-    xalign 0.5
-    yalign 1.0
-
-style quick_button:
-    properties gui.button_properties("quick_button")
-
-style quick_button_text:
-    properties gui.text_properties("quick_button")
 
 
 ################################################################################
@@ -1628,7 +1591,7 @@ style slider_slider:
 screen pantallainicio():
     imagemap:
         ground "PantallaDeInicio.png"
-        hotspot(121, 632, 429, 70) action Jump("mapabase"):
+        hotspot(1367, 492, 431, 92) action Jump("mapabase"):
             activate_sound "audio/click.mp3"
 screen mapabase():
     imagemap:
@@ -1640,4 +1603,31 @@ screen vicerrectoria():
         ground "Edificio Vicerrectoría.png"
         hotspot(1789, 6, 129, 98) action Hide ("vicerrectoria"):
             activate_sound "audio/click.mp3"
-    
+screen centroimar():
+    imagemap:
+        ground "Centro I-Mar.png"
+screen edificiosalud():
+    imagemap:
+        ground "Edificio de Salud.png"
+screen tallermultidisciplinario():
+    imagemap:
+        ground "Edificio Taller Multidisciplinario.png"
+screen centroacondicionamientofisico():
+    imagemap:  
+        ground "Centro de Acondicionamiento Físico.png"
+screen edificioadministrativo():
+    imagemap:
+        ground "Edificio Administrativo del Campus.png"
+screen edificiobiblitoeca():
+    imagemap:
+        ground "Edificio Biblioteca.png"
+screen gimnasios():
+    imagemap:
+        ground "Gimnasios.png"
+screen laboratorios():
+    imagemap:
+        ground "Laboratorios.png"
+screen salondefisica():
+    imagemap:
+        ground "Salon de Física.png"
+
