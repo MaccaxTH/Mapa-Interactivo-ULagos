@@ -37,7 +37,7 @@ label edificioadministrativo1:
 label tallermultidisciplinario1:
     show screen tallermultidisciplinario
     $ renpy.pause (hard=True)
-label s:
+label salondefisica1:
     show screen salondefisica
     $ renpy.pause (hard=True)
 label centroimar1:
