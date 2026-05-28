@@ -13,8 +13,36 @@ label start:
 label mapabase:
     show screen mapabase
     $ renpy.pause (hard=True)
-    
-label vicerrectoria:
+label vicerrectoria1:
     show screen vicerrectoria
     $ renpy.pause (hard=True)
+label edificiobiblioteca1:
+    show screen edificiobiblioteca
+    $ renpy.pause (hard=True)
+label gimnasios1:
+    show screen gimnasios
+    $ renpy.pause (hard=True)
+label laboratorios1:
+    show screen laboratorios
+    $ renpy.pause (hard=True)
+label edificiosalud1:
+    show screen edificiosalud
+    $ renpy.pause (hard=True)
+label centroacondicionamientofisico1:
+    show screen centroacondicionamientofisico
+    $ renpy.pause (hard=True)
+label edificioadministrativo1:
+    show screen edificioadministrativo
+    $ renpy.pause (hard=True)
+label tallermultidisciplinario1:
+    show screen tallermultidisciplinario
+    $ renpy.pause (hard=True)
+label s:
+    show screen salondefisica
+    $ renpy.pause (hard=True)
+label centroimar1:
+    show screen centroimar
+    $ renpy.pause (hard=True)
+
+
 

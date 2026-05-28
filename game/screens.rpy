@@ -1596,38 +1596,57 @@ screen pantallainicio():
 screen mapabase():
     imagemap:
         ground "Mapa.png"
-        hotspot(1004, 603, 56, 56) action Jump("vicerrectoria"):
-            activate_sound "audio/click.mp3"
+        hotspot(922, 384, 38, 36) action Jump("edificiobiblioteca1")
+        hotspot(806, 411, 35, 35) action Jump("vicerrectoria1")
+        hotspot(349, 350, 40, 41) action Jump("gimnasios1")
+        hotspot(550, 305, 37, 36)action Jump("laboratorios1")
+        hotspot(509, 222, 39, 40)action Jump("edificiosalud1")
+        hotspot(343, 185, 38, 35)action Jump("centroacondicionamientofisico1")
+        hotspot(560, 406, 39, 31)action Jump("edificioadministrativo1")
+        hotspot(211, 689, 39, 36)action Jump("tallermultidisciplinario1")
+        hotspot(162, 360, 38, 39)action Jump("salondefisica1")
+        hotspot(998, 875, 42, 41)action Jump("centroimar1")
+        hotspot(442, 1002, 280, 74)action Hide("mapabase")
+        
+        
 screen vicerrectoria():
     imagemap:
         ground "Edificio Vicerrectoría.png"
-        hotspot(1789, 6, 129, 98) action Hide ("vicerrectoria"):
-            activate_sound "audio/click.mp3"
+        hotspot(1802, 14, 102, 87)action Hide("vicerrectoria")
 screen centroimar():
     imagemap:
         ground "Centro I-Mar.png"
+        hotspot(1802, 14, 102, 87)action Hide("centroimar")
 screen edificiosalud():
     imagemap:
         ground "Edificio de Salud.png"
+        hotspot(1802, 14, 102, 87)action Hide("edificiosalud")
 screen tallermultidisciplinario():
     imagemap:
         ground "Edificio Taller Multidisciplinario.png"
+        hotspot(1802, 14, 102, 87)action Hide("tallermultidisciplinario")
 screen centroacondicionamientofisico():
     imagemap:  
         ground "Centro de Acondicionamiento Físico.png"
+        hotspot(1802, 14, 102, 87)action Hide("centroacondicionamientofisico")
 screen edificioadministrativo():
     imagemap:
         ground "Edificio Administrativo del Campus.png"
-screen edificiobiblitoeca():
+        hotspot(1802, 14, 102, 87)action Hide("edificioadministrativo")
+screen edificiobiblioteca():
     imagemap:
         ground "Edificio Biblioteca.png"
+        hotspot(1804, 12, 96, 82)action Hide("edificiobiblioteca")
 screen gimnasios():
     imagemap:
         ground "Gimnasios.png"
+        hotspot(1802, 14, 102, 87)action Hide("gimnasios")
 screen laboratorios():
     imagemap:
         ground "Laboratorios.png"
+        hotspot(1802, 14, 102, 87)action Hide("laboratorios")
 screen salondefisica():
     imagemap:
         ground "Salon de Física.png"
-
+        hotspot(1802, 14, 102, 87)action Hide("salondefisica")
+#hotspot(1802, 14, 102, 87)action Hide("")
