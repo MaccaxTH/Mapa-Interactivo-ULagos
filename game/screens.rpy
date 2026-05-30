@@ -447,6 +447,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
+ 
 
 
 style game_menu_outer_frame is empty
@@ -1591,6 +1592,7 @@ style slider_slider:
 screen pantallainicio():
     imagemap:
         ground "PantallaDeInicio.png"
+        hotspot(1487, 879, 157, 73) action Quit(confirm=False)
         hotspot(1367, 492, 431, 92) action Jump("mapabase"):
             activate_sound "audio/click.mp3"
 screen mapabase():
