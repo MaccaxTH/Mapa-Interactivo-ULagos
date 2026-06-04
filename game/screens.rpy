@@ -1625,51 +1625,121 @@ screen mapabase():
 screen vicerrectoria():
     imagemap:
         ground "Edificio Vicerrectoría.png"
-        hotspot(1802, 14, 102, 87)action Hide("vicerrectoria"):
-            activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("vicerrectoria")
+        activate_sound "audio/click.mp3"
 screen centroimar():
     imagemap:
         ground "Centro I-Mar.png"
-        hotspot(1802, 14, 102, 87)action Hide("centroimar"):
-            activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("centroimar")
+        activate_sound "audio/click.mp3"
 screen edificiosalud():
     imagemap:
         ground "Edificio de Salud.png"
-        hotspot(1802, 14, 102, 87)action Hide("edificiosalud"):
-            activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("edificiosalud")
+        activate_sound "audio/click.mp3"
 screen tallermultidisciplinario():
     imagemap:
         ground "Edificio Taller Multidisciplinario.png"
-        hotspot(1802, 14, 102, 87)action Hide("tallermultidisciplinario"):
-            activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("tallermultidisciplinario")
+        activate_sound "audio/click.mp3"
 screen centroacondicionamientofisico():
     imagemap:  
         ground "Centro de Acondicionamiento Físico.png"
-        hotspot(1802, 14, 102, 87)action Hide("centroacondicionamientofisico"):
-            activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("centroacondicionamientofisico")
+        activate_sound "audio/click.mp3"
 screen edificioadministrativo():
     imagemap:
         ground "Edificio Administrativo del Campus.png"
-        hotspot(1802, 14, 102, 87)action Hide("edificioadministrativo"):
-            activate_sound "audio/click.mp3"
+            #activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("edificioadministrativo")
+        activate_sound "audio/click.mp3"
 screen edificiobiblioteca():
     imagemap:
         ground "Edificio Biblioteca.png"
-        hotspot(1804, 12, 96, 82)action Hide("edificiobiblioteca"):
-            activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("edificiobiblioteca")
+        activate_sound "audio/click.mp3"
 screen gimnasios():
     imagemap:
         ground "Gimnasios.png"
-        hotspot(1802, 14, 102, 87)action Hide("gimnasios"):
-            activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("gimnasios")
+        activate_sound "audio/click.mp3"
 screen laboratorios():
     imagemap:
         ground "Laboratorios.png"
-        hotspot(1802, 14, 102, 87)action Hide("laboratorios"):
-            activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("laboratorios")
+        activate_sound "audio/click.mp3"
 screen salondefisica():
     imagemap:
         ground "Salon de Física.png"
-        hotspot(1802, 14, 102, 87)action Hide("salondefisica"):
-            activate_sound "audio/click.mp3"
-#hotspot(1802, 14, 102, 87)action Hide("")
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("salondefisica")
+        activate_sound "audio/click.mp3"
