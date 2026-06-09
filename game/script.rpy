@@ -4,59 +4,62 @@
 
 define e = Character("Eileen")
 
-define slow_fade = Fade(0.2, 0.5, 0.3)
+# Transiciones 
 
+define custom_fade = Fade(0.1, 0.2, 0.1) # Lo que tarda en llegar a negro / Lo que se mantiene / Volver a normal
+
+define custom_dissolve = Dissolve(0.5)
 
 # El juego comienza aquí.
 label main_menu:
     return
     $ _skipping = False 
 label start:
-    show screen pantallainicio
+    show screen pantallainicio with fade
     $ renpy.pause (hard=True)
     $ _skipping = False
 label mapabase:
-    show screen mapabase with slow_fade
+    show screen mapabase with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label vicerrectoria1:
-    show screen vicerrectoria
+    show screen vicerrectoria with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label edificiobiblioteca1:
-    show screen edificiobiblioteca
+    show screen edificiobiblioteca with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label gimnasios1:
-    show screen gimnasios
+    show screen gimnasios with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label laboratorios1:
-    show screen laboratorios
+    show screen laboratorios with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label edificiosalud1:
-    show screen edificiosalud
+    show screen edificiosalud with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label centroacondicionamientofisico1:
-    show screen centroacondicionamientofisico
+    show screen centroacondicionamientofisico with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label edificioadministrativo1:
-    show screen edificioadministrativo
+    show screen edificioadministrativo with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label tallermultidisciplinario1:
-    show screen tallermultidisciplinario
+    show screen tallermultidisciplinario with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label salondefisica1:
-    show screen salondefisica
+    show screen salondefisica with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label centroimar1:
-    show screen centroimar
+    show screen centroimar with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 
