@@ -4,6 +4,8 @@
 
 define e = Character("Eileen")
 
+define slow_fade = Fade(0.2, 0.5, 0.3)
+
 
 # El juego comienza aquí.
 label main_menu:
@@ -14,7 +16,7 @@ label start:
     $ renpy.pause (hard=True)
     $ _skipping = False
 label mapabase:
-    show screen mapabase with fade
+    show screen mapabase with slow_fade
     $ renpy.pause (hard=True)
     $ _skipping = False
 label vicerrectoria1:
