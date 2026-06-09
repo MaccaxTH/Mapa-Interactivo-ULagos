@@ -86,6 +86,9 @@ label pasillo1:
     show screen pasillo
     $ renpy.pause (hard=True)
     $ _skipping = False
-
+label imagenes1:
+    show screen imagenes
+    $ renpy.pause (hard=True)
+    $ _skipping = False
 
 
