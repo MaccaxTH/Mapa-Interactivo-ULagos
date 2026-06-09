@@ -1603,6 +1603,8 @@ screen pantallainicio():
             activate_sound "audio/click.mp3"
         hotspot(1403, 386, 317, 65) action [With(custom_dissolve),Jump("creditos1")]:
             activate_sound "audio/click.mp3"
+        hotspot(1420, 643, 316, 62)action Jump("imagenes1"):
+            activate_sound "audio/click.mp3"
 screen mapabase():
     imagemap:
         ground "Mapa.png"
@@ -1770,6 +1772,7 @@ screen edificioprincipal():
         hotspot(725, 466, 42, 40)action Jump("casino1")
         hotspot(583, 465, 39, 41)action Jump("superior1")
         hotspot(379, 469, 40, 37)action Jump("estarII1")
+        
     imagebutton:
         xanchor 0.9
         yanchor 0.1
