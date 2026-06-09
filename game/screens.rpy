@@ -1829,15 +1829,5 @@ screen pasillo():
         ypos 0.009
         idle "flecha1.png"
         hover "flecha2.png"
-<<<<<<< HEAD
-        action Hide("pasillo")
-        activate_sound "audio/click.mp3"
-screen imagenes():
-    imagemap: 
-        ground "Imagenes.png"
-        hotspot(806, 1009, 278, 69)action Hide("imagenes")
-        
-=======
         action [Hide("pasillo"), With(dissolve)]
         activate_sound "audio/click.mp3"
->>>>>>> 4a48a55feadd1596788660d151c986d515193787
