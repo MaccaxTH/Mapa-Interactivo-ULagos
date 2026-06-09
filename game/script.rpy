@@ -14,7 +14,7 @@ label start:
     $ renpy.pause (hard=True)
     $ _skipping = False
 label mapabase:
-    show screen mapabase
+    show screen mapabase with fade
     $ renpy.pause (hard=True)
     $ _skipping = False
 label vicerrectoria1:
