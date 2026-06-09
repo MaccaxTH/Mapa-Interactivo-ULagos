@@ -63,27 +63,27 @@ label centroimar1:
     $ renpy.pause (hard=True)
     $ _skipping = False
 label creditos1:
-    show screen creditos
+    show screen creditos with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label edificioprincipal1:
-    show screen edificioprincipal
+    show screen edificioprincipal with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label casino1:
-    show screen casino
+    show screen casino with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label superior1:
-    show screen superior
+    show screen superior with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label estarII1:
-    show screen estarII
+    show screen estarII with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label pasillo1:
-    show screen pasillo
+    show screen pasillo with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
 label imagenes1:

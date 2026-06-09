@@ -1587,15 +1587,21 @@ style slider_slider:
     variant "small"
     xsize 900
 
+
+# Transiciones
+
+define custom_dissolve = Dissolve(0.5)
+
+
 # PAPU INICIO
 
 screen pantallainicio():
     imagemap:
         ground "PantallaDeInicio.png"
         hotspot(1487, 879, 157, 73) action Quit(confirm=False)
-        hotspot(1367, 492, 431, 92) action Jump("mapabase"):
+        hotspot(1367, 492, 431, 92) action [With(custom_dissolve), Jump("mapabase")]:
             activate_sound "audio/click.mp3"
-        hotspot(1403, 386, 317, 65) action Jump("creditos1"):
+        hotspot(1403, 386, 317, 65) action [With(custom_dissolve),Jump("creditos1")]:
             activate_sound "audio/click.mp3"
         hotspot(1420, 643, 316, 62)action Jump("imagenes1"):
             activate_sound "audio/click.mp3"
@@ -1622,7 +1628,7 @@ screen mapabase():
             activate_sound "audio/click.mp3"
         hotspot(998, 875, 42, 41)action Jump("centroimar1"):
             activate_sound "audio/click.mp3"
-        hotspot(442, 1002, 280, 74)action Hide("mapabase"):
+        hotspot(442, 1002, 280, 74)action [Hide("mapabase"), With(dissolve)]:
             activate_sound "audio/click.mp3"
         hotspot(821, 294, 38, 38)action Jump("edificioprincipal1")
 
@@ -1636,7 +1642,7 @@ screen vicerrectoria():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("vicerrectoria")
+        action [Hide("vicerrectoria"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen centroimar():
     imagemap:
@@ -1648,7 +1654,7 @@ screen centroimar():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("centroimar")
+        action [Hide("centroimar"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen edificiosalud():
     imagemap:
@@ -1660,7 +1666,7 @@ screen edificiosalud():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("edificiosalud")
+        action [Hide("edificiosalud"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen tallermultidisciplinario():
     imagemap:
@@ -1672,7 +1678,7 @@ screen tallermultidisciplinario():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("tallermultidisciplinario")
+        action [Hide("tallermultidisciplinario"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen centroacondicionamientofisico():
     imagemap:  
@@ -1684,7 +1690,7 @@ screen centroacondicionamientofisico():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("centroacondicionamientofisico")
+        action [Hide("centroacondicionamientofisico"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen edificioadministrativo():
     imagemap:
@@ -1697,7 +1703,7 @@ screen edificioadministrativo():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("edificioadministrativo")
+        action [Hide("edificioadministrativo"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen edificiobiblioteca():
     imagemap:
@@ -1709,7 +1715,7 @@ screen edificiobiblioteca():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("edificiobiblioteca")
+        action [Hide("edificiobiblioteca"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen gimnasios():
     imagemap:
@@ -1721,7 +1727,7 @@ screen gimnasios():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("gimnasios")
+        action [Hide("gimnasios"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen laboratorios():
     imagemap:
@@ -1733,7 +1739,7 @@ screen laboratorios():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("laboratorios")
+        action [Hide("laboratorios"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen salondefisica():
     imagemap:
@@ -1745,7 +1751,7 @@ screen salondefisica():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("salondefisica")
+        action [Hide("salondefisica"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen creditos():
     imagemap:
@@ -1757,7 +1763,7 @@ screen creditos():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("creditos")
+        action [Hide("creditos"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen edificioprincipal():
     imagemap:
@@ -1774,7 +1780,7 @@ screen edificioprincipal():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("edificioprincipal")
+        action [Hide("edificioprincipal"), With(dissolve)]
         activate_sound "audio/click.mp3"
     
 screen casino():
@@ -1787,7 +1793,7 @@ screen casino():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("casino")
+        action [Hide("casino"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen superior():
     imagemap:
@@ -1799,7 +1805,7 @@ screen superior():
         ypos 0.009
         idle "flecha1.png"
         hover "flecha2.png"
-        action Hide("superior")
+        action [Hide("superior"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen estarII():
     imagemap:
@@ -1811,7 +1817,7 @@ screen estarII():
         ypos 0.009
         idle "flecha1.png"
         hover "flecha2.png"
-        action Hide("estarII")
+        action [Hide("estarII"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen pasillo():
     imagemap:
@@ -1823,6 +1829,7 @@ screen pasillo():
         ypos 0.009
         idle "flecha1.png"
         hover "flecha2.png"
+<<<<<<< HEAD
         action Hide("pasillo")
         activate_sound "audio/click.mp3"
 screen imagenes():
@@ -1830,3 +1837,7 @@ screen imagenes():
         ground "Imagenes.png"
         hotspot(806, 1009, 278, 69)action Hide("imagenes")
         
+=======
+        action [Hide("pasillo"), With(dissolve)]
+        activate_sound "audio/click.mp3"
+>>>>>>> 4a48a55feadd1596788660d151c986d515193787
