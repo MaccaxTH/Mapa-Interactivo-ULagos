@@ -57,6 +57,30 @@ label centroimar1:
     show screen centroimar
     $ renpy.pause (hard=True)
     $ _skipping = False
+label creditos1:
+    show screen creditos
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label edificioprincipal1:
+    show screen edificioprincipal
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label casino1:
+    show screen casino
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label superior1:
+    show screen superior
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label estarII1:
+    show screen estarII
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label pasillo1:
+    show screen pasillo
+    $ renpy.pause (hard=True)
+    $ _skipping = False
 
 
 

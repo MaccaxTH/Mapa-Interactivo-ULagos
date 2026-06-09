@@ -1595,6 +1595,8 @@ screen pantallainicio():
         hotspot(1487, 879, 157, 73) action Quit(confirm=False)
         hotspot(1367, 492, 431, 92) action Jump("mapabase"):
             activate_sound "audio/click.mp3"
+        hotspot(1403, 386, 317, 65) action Jump("creditos1"):
+            activate_sound "audio/click.mp3"
 screen mapabase():
     imagemap:
         ground "Mapa.png"
@@ -1620,8 +1622,8 @@ screen mapabase():
             activate_sound "audio/click.mp3"
         hotspot(442, 1002, 280, 74)action Hide("mapabase"):
             activate_sound "audio/click.mp3"
-        
-        
+        hotspot(821, 294, 38, 38)action Jump("edificioprincipal1")
+
 screen vicerrectoria():
     imagemap:
         ground "Edificio Vicerrectoría.png"
@@ -1742,4 +1744,81 @@ screen salondefisica():
         idle "flecha1.png"
         hover"flecha2.png"
         action Hide("salondefisica")
+        activate_sound "audio/click.mp3"
+screen creditos():
+    imagemap:
+        ground "Creditos.png"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("creditos")
+        activate_sound "audio/click.mp3"
+screen edificioprincipal():
+    imagemap:
+        ground "Edificio Principal_ Mapa.png"
+        hotspot(920, 561, 41, 41)action Jump("pasillo1")
+        hotspot(725, 466, 42, 40)action Jump("casino1")
+        hotspot(583, 465, 39, 41)action Jump("superior1")
+        hotspot(379, 469, 40, 37)action Jump("estarII1")
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("edificioprincipal")
+        activate_sound "audio/click.mp3"
+    
+screen casino():
+    imagemap:
+        ground "Edificio Principal_ Casino.png"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover"flecha2.png"
+        action Hide("casino")
+        activate_sound "audio/click.mp3"
+screen superior():
+    imagemap:
+        ground "Edificio Principal_ Pisos Superiores.png"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover "flecha2.png"
+        action Hide("superior")
+        activate_sound "audio/click.mp3"
+screen estarII():
+    imagemap:
+        ground "Edificio Principal_ Sala de Estar 2.png"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover "flecha2.png"
+        action Hide("estarII")
+        activate_sound "audio/click.mp3"
+screen pasillo():
+    imagemap:
+        ground "Edificio Principal_ Pasillo Principal.png"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover "flecha2.png"
+        action Hide("pasillo")
         activate_sound "audio/click.mp3"
