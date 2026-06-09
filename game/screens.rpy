@@ -1598,7 +1598,7 @@ define custom_dissolve = Dissolve(0.5)
 screen pantallainicio():
     imagemap:
         ground "PantallaDeInicio.png"
-        hotspot(1487, 879, 157, 73) action Quit(confirm=False)
+        hotspot(1487, 879, 157, 73) action [With(fade), Quit(confirm=False)]
         hotspot(1367, 492, 431, 92) action [With(custom_dissolve), Jump("mapabase")]:
             activate_sound "audio/click.mp3"
         hotspot(1403, 386, 317, 65) action [With(custom_dissolve),Jump("creditos1")]:

@@ -199,7 +199,6 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
-
 ## Se necesita una clave de licencia de Google Play para realizar compras dentro
 ## de la aplicación. Se puede encontrar en la consola de desarrollador de Google
 ## Play, en "Monetizar" > "Configuración de la monetización" > "Licencias".
