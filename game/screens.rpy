@@ -5,15 +5,36 @@ define custom_dissolve = Dissolve(0.5)
 # PAPU INICIO
 
 screen pantallainicio():
-    imagemap:
-        ground "PantallaDeInicio.png"
-        hotspot(1487, 879, 157, 73) action [With(fade), Quit(confirm=False)]
-        hotspot(1367, 492, 431, 92) action [With(custom_dissolve), Jump("mapabase")]:
-            activate_sound "audio/click.mp3"
-        hotspot(1403, 386, 317, 65) action [With(custom_dissolve),Jump("creditos1")]:
-            activate_sound "audio/click.mp3"
-        hotspot(1420, 643, 316, 62) action [With(custom_dissolve), Jump("imagenes1")]:
-            activate_sound "audio/click.mp3"
+
+    add "PantallaDeInicio.png"
+
+    imagebutton:
+        xpos 1355
+        ypos 360
+        idle "PantallaDeInicioCreditos.png"
+        hover "PantallaDeInicioCreditos2.png"
+        action [With(custom_dissolve), Jump("creditos1")]
+
+    imagebutton:
+        xpos 1302
+        ypos 455
+        idle "PantallaDeInicioMapa.png"
+        hover "PantallaDeInicioMapa2.png"
+        action [With(custom_dissolve), Jump("mapabase")]
+
+    imagebutton:
+        xpos 1355
+        ypos 605
+        idle "PantallaDeInicioImagenes.png"
+        hover "PantallaDeInicioImagenes2.png"
+        action [With(custom_dissolve), Jump("imagenes1")]
+
+    imagebutton:
+        xpos 1355
+        ypos 850
+        idle "PantallaDeInicioSalir.png"
+        hover "PantallaDeInicioSalir2.png"
+        action [With(fade), Quit(confirm=False)]
 screen mapabase():
     imagemap:
         ground "Mapa.png"
@@ -39,8 +60,17 @@ screen mapabase():
             activate_sound "audio/click.mp3"
         hotspot(442, 1002, 280, 74)action [Hide("mapabase"), With(dissolve)]:
             activate_sound "audio/click.mp3"
-        hotspot(821, 294, 38, 38)action Jump("edificioprincipal1")
-
+        hotspot(821, 294, 38, 38)action Jump("edificioprincipal1"):
+            activate_sound "audio/click.mp3"
+        imagebutton:
+            xanchor 0.9
+            yanchor 0.1
+            xpos 0.37
+            ypos 0.92
+            idle "Inicio.png"
+            hover"Iniciopapu.png"
+            action [Hide("mapabase"), With(dissolve)]
+            activate_sound "audio/click.mp3"
 screen vicerrectoria():
     imagemap:
         ground "Edificio Vicerrectoría.png"
