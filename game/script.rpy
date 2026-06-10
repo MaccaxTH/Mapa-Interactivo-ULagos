@@ -1,10 +1,4 @@
-﻿# Coloca el código de tu juego en este archivo.
-
-# Declara los personajes usados en el juego como en el ejemplo:
-
-define e = Character("Eileen")
-
-# Transiciones 
+﻿# Transiciones 
 
 define custom_fade = Fade(0.1, 0.2, 0.1) # Lo que tarda en llegar a negro / Lo que se mantiene / Volver a normal
 
