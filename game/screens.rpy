@@ -1679,16 +1679,29 @@ screen tallermultidisciplinario():
         hover"flecha2.png"
         action [Hide("tallermultidisciplinario"), With(dissolve)]
         activate_sound "audio/click.mp3"
+transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
+    xpos -1456 ypos 0
+    linear 0.5 xpos 0
+
 screen centroacondicionamientofisico():
     imagemap:  
         ground "Centro de Acondicionamiento Físico.png"
+    
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Centro de Acondicionamiento Físico(1).png"  # Aquí es la imagen que se anima
+    
     imagebutton:
         xanchor 0.9
         yanchor 0.1
         xpos 0.988
         ypos 0.009
         idle "flecha1.png"
-        hover"flecha2.png"
+        hover "flecha2.png"
         action [Hide("centroacondicionamientofisico"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen edificioadministrativo():
