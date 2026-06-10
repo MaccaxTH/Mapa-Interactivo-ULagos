@@ -14,6 +14,7 @@ screen pantallainicio():
         idle "PantallaDeInicioCreditos.png"
         hover "PantallaDeInicioCreditos2.png"
         action [With(custom_dissolve), Jump("creditos1")]
+        activate_sound "audio/click.mp3"
 
     imagebutton:
         xpos 1302
@@ -21,6 +22,7 @@ screen pantallainicio():
         idle "PantallaDeInicioMapa.png"
         hover "PantallaDeInicioMapa2.png"
         action [With(custom_dissolve), Jump("mapabase")]
+        activate_sound "audio/click.mp3"
 
     imagebutton:
         xpos 1355
@@ -28,6 +30,7 @@ screen pantallainicio():
         idle "PantallaDeInicioImagenes.png"
         hover "PantallaDeInicioImagenes2.png"
         action [With(custom_dissolve), Jump("imagenes1")]
+        activate_sound "audio/click.mp3"
 
     imagebutton:
         xpos 1355
@@ -35,6 +38,7 @@ screen pantallainicio():
         idle "PantallaDeInicioSalir.png"
         hover "PantallaDeInicioSalir2.png"
         action [With(fade), Quit(confirm=False)]
+        activate_sound "audio/click.mp3"
 screen mapabase():
     imagemap:
         ground "Mapa.png"
