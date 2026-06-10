@@ -213,3 +213,7 @@ init python:
 
 ## desactivar menú de juego (Funcionaba con ESC y Click derecho)
 define config.keymap = {k: v for k, v in config.keymap.items() if k != 'game_menu'}
+
+# Personalizar el icono del programa
+
+define config.window_icon = "iconopapu.png"
