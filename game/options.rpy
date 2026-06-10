@@ -210,3 +210,6 @@ init python:
 ## separados por una barra.
 
 # define build.itch_project = "renpytom/test-project"
+
+## desactivar menú de juego (Funcionaba con ESC y Click derecho)
+define config.keymap = {k: v for k, v in config.keymap.items() if k != 'game_menu'}

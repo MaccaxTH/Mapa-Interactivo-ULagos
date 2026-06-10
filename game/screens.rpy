@@ -1592,7 +1592,6 @@ style slider_slider:
 
 define custom_dissolve = Dissolve(0.5)
 
-
 # PAPU INICIO
 
 screen pantallainicio():
@@ -1603,7 +1602,7 @@ screen pantallainicio():
             activate_sound "audio/click.mp3"
         hotspot(1403, 386, 317, 65) action [With(custom_dissolve),Jump("creditos1")]:
             activate_sound "audio/click.mp3"
-        hotspot(1420, 643, 316, 62)action Jump("imagenes1"):
+        hotspot(1420, 643, 316, 62) action [With(custom_dissolve), Jump("imagenes1")]:
             activate_sound "audio/click.mp3"
 screen mapabase():
     imagemap:
@@ -1830,4 +1829,16 @@ screen pasillo():
         idle "flecha1.png"
         hover "flecha2.png"
         action [Hide("pasillo"), With(dissolve)]
+        activate_sound "audio/click.mp3"
+screen imagenes1():
+    imagemap:
+        ground "imagenes.png"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover "flecha2.png" 
+        action [Hide("imagenes1"), With(dissolve)]     
         activate_sound "audio/click.mp3"
