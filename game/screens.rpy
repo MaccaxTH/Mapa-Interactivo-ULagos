@@ -1868,9 +1868,9 @@ screen imagenes1():
     imagebutton:
         xanchor 0.9
         yanchor 0.1
-        xpos 0.988
-        ypos 0.009
-        idle "flecha1.png"
-        hover "flecha2.png" 
+        xpos 0.56
+        ypos 0.92
+        idle "Inicio.png"
+        hover "InicioPapu.png" 
         action [Hide("imagenes1"), With(dissolve)]     
         activate_sound "audio/click.mp3"
