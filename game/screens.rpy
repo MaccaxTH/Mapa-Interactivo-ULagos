@@ -1696,6 +1696,16 @@ screen centroacondicionamientofisico():
         add "Centro de Acondicionamiento Físico(1).png"  # Aquí es la imagen que se anima
     
     imagebutton:
+        idle Solid("#0000")
+        hover Solid("#FFFFFF33")  
+        xpos 0.04
+        ypos 0.25
+        xsize 180
+        ysize 120
+        action OpenURL("https://www.instagram.com/p/C-vAUSoOXvp/?hl=es-la")
+        activate_sound "audio/click.mp3"
+    
+    imagebutton:
         xanchor 0.9
         yanchor 0.1
         xpos 0.988
@@ -1776,6 +1786,15 @@ screen creditos():
         idle "flecha1.png"
         hover"flecha2.png"
         action [Hide("creditos"), With(dissolve)]
+        activate_sound "audio/click.mp3"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 1.0
+        ypos 0.1
+        idle "GitHubIcon.png"
+        hover "GitHubIconClick.png"
+        action OpenURL("https://github.com/MaccaxTH/Mapa-Interactivo-ULagos.git")
         activate_sound "audio/click.mp3"
 screen edificioprincipal():
     imagemap:
