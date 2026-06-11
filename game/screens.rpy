@@ -1,6 +1,18 @@
-﻿# Transiciones
+﻿# Animaciones y variables
 
-define custom_dissolve = Dissolve(0.5)
+define custom_dissolve = Dissolve(0.5) # Transición de disolver
+
+transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
+    xpos -1456 ypos 0
+    linear 0.5 xpos 0
+
+transform panel_derecha: # Esto es para definir la animacion, es un paneo desde la derecha
+    xpos 1456 ypos 0
+    linear 0.5 xpos 0
+
+transform panel_abajo: # Esto es para definir la animacion, es un paneo desde abajo
+    xpos 0 ypos 1456
+    linear 0.5 ypos 0
 
 # PAPU INICIO
 
@@ -105,9 +117,6 @@ screen vicerrectoria():
         hover"flecha2.png"
         action Hide("vicerrectoria")
         activate_sound "audio/click.mp3"
-transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
-    xpos -1456 ypos 0
-    linear 0.5 xpos 0
 screen centroimar():
     frame:
         modal True
@@ -133,9 +142,6 @@ screen centroimar():
         hover"flecha2.png"
         action Hide("centroimar")
         activate_sound "audio/click.mp3"
-transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
-    xpos -1456 ypos 0
-    linear 0.5 xpos 0
 screen edificiosalud():
     frame:
         modal True
@@ -177,9 +183,6 @@ screen tallermultidisciplinario():
         idle "flecha1.png"
         hover"flecha2.png"
         action [Hide("tallermultidisciplinario"), With(dissolve)]
-transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
-    xpos -1456 ypos 0
-    linear 0.5 xpos 0
 
 screen centroacondicionamientofisico():
     frame:
@@ -293,9 +296,6 @@ screen gimnasios():
         hover"flecha2.png"
         action Hide("gimnasios")
         activate_sound "audio/click.mp3"
-transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
-    xpos -1456 ypos 0
-    linear 0.5 xpos 0
 screen laboratorios():
     frame:
         modal True
@@ -408,6 +408,13 @@ screen casino():
         align((0.5, 0.5))
     imagemap:
         ground "Edificio Principal_ Casino.png"
+    frame at panel_derecha:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "EdificioPrincipalCasinoPanel.png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -424,7 +431,14 @@ screen superior():
         ysize 1080
         align((0.5, 0.5))
     imagemap:
-        ground "Edificio Principal_ Pisos Superiores.png"
+        ground "EdificioPrincipalPisosSuperiores.png"
+    frame at panel_abajo:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "EdificioPrincipalPisosSuperioresPanel.png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -441,7 +455,14 @@ screen estarII():
         ysize 1080
         align((0.5, 0.5))
     imagemap:
-        ground "Edificio Principal_ Sala de Estar 2.png"
+        ground "EdificioPrincipalSaladeEstar2.png"
+    frame at panel_abajo:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "EdificioPrincipalSaladeEstar2Panel.png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -458,7 +479,14 @@ screen pasillo():
         ysize 1080
         align((0.5, 0.5))
     imagemap:
-        ground "Edificio Principal_ Pasillo Principal.png"
+        ground "EdificioPrincipalPasillo.png"
+    frame at panel_derecha:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "EdificioPrincipalPasilloPanel.png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
