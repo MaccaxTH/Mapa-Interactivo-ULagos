@@ -177,8 +177,6 @@ screen tallermultidisciplinario():
         idle "flecha1.png"
         hover"flecha2.png"
         action [Hide("tallermultidisciplinario"), With(dissolve)]
-        action Hide("edificiosalud")
-        activate_sound "audio/click.mp3"
 transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
     xpos -1456 ypos 0
     linear 0.5 xpos 0
