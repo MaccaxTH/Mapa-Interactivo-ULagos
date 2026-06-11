@@ -40,6 +40,11 @@ screen pantallainicio():
         action [With(fade), Quit(confirm=False)]
         activate_sound "audio/click.mp3"
 screen mapabase():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Mapa.png"
         hotspot(922, 384, 38, 36) action Jump("edificiobiblioteca1"):
@@ -76,6 +81,11 @@ screen mapabase():
             action [Hide("mapabase"), With(dissolve)]
             activate_sound "audio/click.mp3"
 screen vicerrectoria():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio Vicerrectoría.png"
     imagebutton:
@@ -88,6 +98,11 @@ screen vicerrectoria():
         action [Hide("vicerrectoria"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen centroimar():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Centro I-Mar.png"
     imagebutton:
@@ -100,6 +115,11 @@ screen centroimar():
         action [Hide("centroimar"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen edificiosalud():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio de Salud.png"
     imagebutton:
@@ -112,6 +132,11 @@ screen edificiosalud():
         action [Hide("edificiosalud"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen tallermultidisciplinario():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio Taller Multidisciplinario.png"
     imagebutton:
@@ -128,6 +153,11 @@ transform panel_entra: # Esto es para definir la animacion, es un paneo desde la
     linear 0.5 xpos 0
 
 screen centroacondicionamientofisico():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:  
         ground "Centro de Acondicionamiento Físico.png"
     
@@ -159,6 +189,11 @@ screen centroacondicionamientofisico():
         action [Hide("centroacondicionamientofisico"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen edificioadministrativo():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio Administrativo del Campus.png"
             #activate_sound "audio/click.mp3"
@@ -172,6 +207,11 @@ screen edificioadministrativo():
         action [Hide("edificioadministrativo"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen edificiobiblioteca():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio Biblioteca.png"
     imagebutton:
@@ -184,6 +224,11 @@ screen edificiobiblioteca():
         action [Hide("edificiobiblioteca"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen gimnasios():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Gimnasios.png"
     imagebutton:
@@ -196,6 +241,11 @@ screen gimnasios():
         action [Hide("gimnasios"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen laboratorios():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Laboratorios.png"
     imagebutton:
@@ -208,6 +258,11 @@ screen laboratorios():
         action [Hide("laboratorios"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen salondefisica():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Salon de Física.png"
     imagebutton:
@@ -220,6 +275,16 @@ screen salondefisica():
         action [Hide("salondefisica"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen creditos():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Creditos.png"
     imagebutton:
@@ -241,12 +306,17 @@ screen creditos():
         action OpenURL("https://github.com/MaccaxTH/Mapa-Interactivo-ULagos.git")
         activate_sound "audio/click.mp3"
 screen edificioprincipal():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio Principal_ Mapa.png"
-        hotspot(920, 561, 41, 41)action Jump("pasillo1")
-        hotspot(725, 466, 42, 40)action Jump("casino1")
-        hotspot(583, 465, 39, 41)action Jump("superior1")
-        hotspot(379, 469, 40, 37)action Jump("estarII1")
+        hotspot(997, 752, 34, 32)action Jump("pasillo1")
+        hotspot(812, 693, 37, 38)action Jump("casino1")
+        hotspot(755, 694, 41, 34)action Jump("superior1")
+        hotspot(486, 674, 45, 35)action Jump("estarII1")
         
     imagebutton:
         xanchor 0.9
@@ -259,6 +329,11 @@ screen edificioprincipal():
         activate_sound "audio/click.mp3"
     
 screen casino():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio Principal_ Casino.png"
     imagebutton:
@@ -271,6 +346,11 @@ screen casino():
         action [Hide("casino"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen superior():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio Principal_ Pisos Superiores.png"
     imagebutton:
@@ -283,6 +363,11 @@ screen superior():
         action [Hide("superior"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen estarII():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio Principal_ Sala de Estar 2.png"
     imagebutton:
@@ -295,6 +380,11 @@ screen estarII():
         action [Hide("estarII"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen pasillo():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "Edificio Principal_ Pasillo Principal.png"
     imagebutton:
@@ -307,6 +397,11 @@ screen pasillo():
         action [Hide("pasillo"), With(dissolve)]
         activate_sound "audio/click.mp3"
 screen imagenes1():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground "imagenes.png"
     imagebutton:
