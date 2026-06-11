@@ -78,6 +78,14 @@ screen mapabase():
 screen vicerrectoria():
     imagemap:
         ground "Edificio Vicerrectoría.png"
+    
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Edificio Vicerrectoría(1).png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -85,11 +93,22 @@ screen vicerrectoria():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("vicerrectoria"), With(dissolve)]
+        action Hide("vicerrectoria")
         activate_sound "audio/click.mp3"
+transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
+    xpos -1456 ypos 0
+    linear 0.5 xpos 0
 screen centroimar():
     imagemap:
         ground "Centro I-Mar.png"
+    
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Centro I-Mar(1).png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -97,11 +116,22 @@ screen centroimar():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("centroimar"), With(dissolve)]
+        action Hide("centroimar")
         activate_sound "audio/click.mp3"
+transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
+    xpos -1456 ypos 0
+    linear 0.5 xpos 0
 screen edificiosalud():
     imagemap:
         ground "Edificio de Salud.png"
+    
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Edificio de Salud(1).png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -109,19 +139,7 @@ screen edificiosalud():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("edificiosalud"), With(dissolve)]
-        activate_sound "audio/click.mp3"
-screen tallermultidisciplinario():
-    imagemap:
-        ground "Edificio Taller Multidisciplinario.png"
-    imagebutton:
-        xanchor 0.9
-        yanchor 0.1
-        xpos 0.988
-        ypos 0.009
-        idle "flecha1.png"
-        hover"flecha2.png"
-        action [Hide("tallermultidisciplinario"), With(dissolve)]
+        action Hide("edificiosalud")
         activate_sound "audio/click.mp3"
 transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
     xpos -1456 ypos 0
@@ -162,6 +180,14 @@ screen edificioadministrativo():
     imagemap:
         ground "Edificio Administrativo del Campus.png"
             #activate_sound "audio/click.mp3"
+    
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Edificio Administrativo del Campus(1).png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -169,11 +195,19 @@ screen edificioadministrativo():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("edificioadministrativo"), With(dissolve)]
+        action Hide("edificioadministrativo")
         activate_sound "audio/click.mp3"
 screen edificiobiblioteca():
     imagemap:
         ground "Edificio Biblioteca.png"
+    
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Edificio Biblioteca(1).png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -181,11 +215,19 @@ screen edificiobiblioteca():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("edificiobiblioteca"), With(dissolve)]
+        action Hide("edificiobiblioteca")
         activate_sound "audio/click.mp3"
 screen gimnasios():
     imagemap:
         ground "Gimnasios.png"
+    
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Gimnasios(1).png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -193,11 +235,22 @@ screen gimnasios():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("gimnasios"), With(dissolve)]
+        action Hide("gimnasios")
         activate_sound "audio/click.mp3"
+transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
+    xpos -1456 ypos 0
+    linear 0.5 xpos 0
 screen laboratorios():
     imagemap:
         ground "Laboratorios.png"
+    
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Laboratorios(1).png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -205,11 +258,19 @@ screen laboratorios():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("laboratorios"), With(dissolve)]
+        action Hide("laboratorios")
         activate_sound "audio/click.mp3"
 screen salondefisica():
     imagemap:
         ground "Salon de Física.png"
+    
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Salon de Física(1).png"  # Aquí es la imagen que se anima
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -217,7 +278,7 @@ screen salondefisica():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("salondefisica"), With(dissolve)]
+        action Hide("salondefisica")
         activate_sound "audio/click.mp3"
 screen creditos():
     imagemap:
