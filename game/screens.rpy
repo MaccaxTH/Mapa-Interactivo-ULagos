@@ -1,5 +1,8 @@
 ﻿# Animaciones y variables
 
+style default:
+    activate_sound "audio/click.mp3"
+
 define custom_dissolve = Dissolve(0.5) # Transición de disolver
 
 transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
@@ -26,7 +29,6 @@ screen pantallainicio():
         idle "PantallaDeInicioCreditos.png"
         hover "PantallaDeInicioCreditos2.png"
         action [With(custom_dissolve), Jump("creditos1")]
-        activate_sound "audio/click.mp3"
 
     imagebutton:
         xpos 1302
@@ -34,7 +36,6 @@ screen pantallainicio():
         idle "PantallaDeInicioMapa.png"
         hover "PantallaDeInicioMapa2.png"
         action [With(custom_dissolve), Jump("mapabase")]
-        activate_sound "audio/click.mp3"
 
     imagebutton:
         xpos 1355
@@ -42,7 +43,6 @@ screen pantallainicio():
         idle "PantallaDeInicioImagenes.png"
         hover "PantallaDeInicioImagenes2.png"
         action [With(custom_dissolve), Jump("imagenes1")]
-        activate_sound "audio/click.mp3"
 
     imagebutton:
         xpos 1355
@@ -50,7 +50,6 @@ screen pantallainicio():
         idle "PantallaDeInicioSalir.png"
         hover "PantallaDeInicioSalir2.png"
         action [With(fade), Quit(confirm=False)]
-        activate_sound "audio/click.mp3"
 screen mapabase():
     frame:
         modal True
@@ -59,30 +58,18 @@ screen mapabase():
         align((0.5, 0.5))
     imagemap:
         ground "Mapa.png"
-        hotspot(922, 384, 38, 36) action Jump("edificiobiblioteca1"):
-            activate_sound "audio/click.mp3"
-        hotspot(806, 411, 35, 35) action Jump("vicerrectoria1"):
-            activate_sound "audio/click.mp3"
-        hotspot(349, 350, 40, 41) action Jump("gimnasios1"):
-            activate_sound "audio/click.mp3"
-        hotspot(550, 305, 37, 36)action Jump("laboratorios1"):
-            activate_sound "audio/click.mp3"
-        hotspot(509, 222, 39, 40)action Jump("edificiosalud1"):
-            activate_sound "audio/click.mp3"
-        hotspot(343, 185, 38, 35)action Jump("centroacondicionamientofisico1"):
-            activate_sound "audio/click.mp3"
-        hotspot(560, 406, 39, 31)action Jump("edificioadministrativo1"):
-            activate_sound "audio/click.mp3"
-        hotspot(211, 689, 39, 36)action Jump("tallermultidisciplinario1"):
-            activate_sound "audio/click.mp3"
-        hotspot(162, 360, 38, 39)action Jump("salondefisica1"):
-            activate_sound "audio/click.mp3"
-        hotspot(998, 875, 42, 41)action Jump("centroimar1"):
-            activate_sound "audio/click.mp3"
-        hotspot(442, 1002, 280, 74)action [Hide("mapabase"), With(dissolve)]:
-            activate_sound "audio/click.mp3"
-        hotspot(821, 294, 38, 38)action Jump("edificioprincipal1"):
-            activate_sound "audio/click.mp3"
+        hotspot(922, 384, 38, 36) action Jump("edificiobiblioteca1")
+        hotspot(806, 411, 35, 35) action Jump("vicerrectoria1")
+        hotspot(349, 350, 40, 41) action Jump("gimnasios1")
+        hotspot(550, 305, 37, 36)action Jump("laboratorios1")
+        hotspot(509, 222, 39, 40)action Jump("edificiosalud1")
+        hotspot(343, 185, 38, 35)action Jump("centroacondicionamientofisico1")
+        hotspot(560, 406, 39, 31)action Jump("edificioadministrativo1")
+        hotspot(211, 689, 39, 36)action Jump("tallermultidisciplinario1")
+        hotspot(162, 360, 38, 39)action Jump("salondefisica1")
+        hotspot(998, 875, 42, 41)action Jump("centroimar1")
+        hotspot(442, 1002, 280, 74)action [Hide("mapabase"), With(dissolve)]
+        hotspot(821, 294, 38, 38)action Jump("edificioprincipal1")
         imagebutton:
             xanchor 0.9
             yanchor 0.1
@@ -91,7 +78,6 @@ screen mapabase():
             idle "Inicio.png"
             hover"Iniciopapu.png"
             action [Hide("mapabase"), With(dissolve)]
-            activate_sound "audio/click.mp3"
 screen vicerrectoria():
     frame:
         modal True
@@ -116,7 +102,6 @@ screen vicerrectoria():
         idle "flecha1.png"
         hover"flecha2.png"
         action Hide("vicerrectoria")
-        activate_sound "audio/click.mp3"
 screen centroimar():
     frame:
         modal True
@@ -141,7 +126,6 @@ screen centroimar():
         idle "flecha1.png"
         hover"flecha2.png"
         action Hide("centroimar")
-        activate_sound "audio/click.mp3"
 screen edificiosalud():
     frame:
         modal True
@@ -166,7 +150,6 @@ screen edificiosalud():
         idle "flecha1.png"
         hover"flecha2.png"
         action [Hide("edificiosalud"), With(dissolve)]
-        activate_sound "audio/click.mp3"
 screen tallermultidisciplinario():
     frame:
         modal True
@@ -209,7 +192,6 @@ screen centroacondicionamientofisico():
         xsize 180
         ysize 120
         action OpenURL("https://www.instagram.com/p/C-vAUSoOXvp/?hl=es-la")
-        activate_sound "audio/click.mp3"
     
     imagebutton:
         xanchor 0.9
@@ -219,7 +201,6 @@ screen centroacondicionamientofisico():
         idle "flecha1.png"
         hover "flecha2.png"
         action [Hide("centroacondicionamientofisico"), With(dissolve)]
-        activate_sound "audio/click.mp3"
 screen edificioadministrativo():
     frame:
         modal True
@@ -228,8 +209,6 @@ screen edificioadministrativo():
         align((0.5, 0.5))
     imagemap:
         ground "Edificio Administrativo del Campus.png"
-            #activate_sound "audio/click.mp3"
-    
     frame at panel_entra:
         background None
         xsize 1456
@@ -245,7 +224,6 @@ screen edificioadministrativo():
         idle "flecha1.png"
         hover"flecha2.png"
         action Hide("edificioadministrativo")
-        activate_sound "audio/click.mp3"
 screen edificiobiblioteca():
     frame:
         modal True
@@ -270,7 +248,6 @@ screen edificiobiblioteca():
         idle "flecha1.png"
         hover"flecha2.png"
         action Hide("edificiobiblioteca")
-        activate_sound "audio/click.mp3"
 screen gimnasios():
     frame:
         modal True
@@ -295,7 +272,6 @@ screen gimnasios():
         idle "flecha1.png"
         hover"flecha2.png"
         action Hide("gimnasios")
-        activate_sound "audio/click.mp3"
 screen laboratorios():
     frame:
         modal True
@@ -320,7 +296,6 @@ screen laboratorios():
         idle "flecha1.png"
         hover"flecha2.png"
         action Hide("laboratorios")
-        activate_sound "audio/click.mp3"
 screen salondefisica():
     frame:
         modal True
@@ -345,7 +320,7 @@ screen salondefisica():
         idle "flecha1.png"
         hover"flecha2.png"
         action Hide("salondefisica")
-        activate_sound "audio/click.mp3"
+
 screen creditos():
     frame:
         modal True
@@ -367,7 +342,7 @@ screen creditos():
         idle "flecha1.png"
         hover"flecha2.png"
         action [Hide("creditos"), With(dissolve)]
-        activate_sound "audio/click.mp3"
+
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -376,7 +351,7 @@ screen creditos():
         idle "GitHubIcon.png"
         hover "GitHubIconClick.png"
         action OpenURL("https://github.com/MaccaxTH/Mapa-Interactivo-ULagos.git")
-        activate_sound "audio/click.mp3"
+
 screen edificioprincipal():
     frame:
         modal True
@@ -398,7 +373,7 @@ screen edificioprincipal():
         idle "flecha1.png"
         hover"flecha2.png"
         action [Hide("edificioprincipal"), With(dissolve)]
-        activate_sound "audio/click.mp3"
+
     
 screen casino():
     frame:
@@ -423,7 +398,7 @@ screen casino():
         idle "flecha1.png"
         hover"flecha2.png"
         action [Hide("casino"), With(dissolve)]
-        activate_sound "audio/click.mp3"
+
 screen superior():
     frame:
         modal True
@@ -447,7 +422,7 @@ screen superior():
         idle "flecha1.png"
         hover "flecha2.png"
         action [Hide("superior"), With(dissolve)]
-        activate_sound "audio/click.mp3"
+
 screen estarII():
     frame:
         modal True
@@ -471,7 +446,7 @@ screen estarII():
         idle "flecha1.png"
         hover "flecha2.png"
         action [Hide("estarII"), With(dissolve)]
-        activate_sound "audio/click.mp3"
+
 screen pasillo():
     frame:
         modal True
@@ -495,7 +470,7 @@ screen pasillo():
         idle "flecha1.png"
         hover "flecha2.png"
         action [Hide("pasillo"), With(dissolve)]
-        activate_sound "audio/click.mp3"
+
 screen imagenes1():
     frame:
         modal True
@@ -512,4 +487,3 @@ screen imagenes1():
         idle "Inicio.png"
         hover "InicioPapu.png" 
         action [Hide("imagenes1"), With(dissolve)]     
-        activate_sound "audio/click.mp3"
