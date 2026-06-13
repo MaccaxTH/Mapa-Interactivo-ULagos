@@ -84,5 +84,53 @@ label imagenes1:
     show screen imagenes1 with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
+label imagenes1w:
+    show screen imagenes10 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes2w:
+    show screen imagenes20 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes3w:
+    show screen imagenes30 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes4w:   
+    show screen imagenes40 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes5w:
+    show screen imagenes50 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes6w:   
+    show screen imagenes60 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes7w:   
+    show screen imagenes70 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes8w:
+    show screen imagenes80 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes9w:
+    show screen imagenes90 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes10w:
+    show screen imagenes100 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes11w:
+    show screen imagenes110 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
+label imagenes12w:
+    show screen imagenes120 with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False
 
 
