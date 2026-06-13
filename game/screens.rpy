@@ -331,11 +331,6 @@ screen creditos():
         xsize 1920
         ysize 1080
         align((0.5, 0.5))
-    frame:
-        modal True
-        xsize 1920
-        ysize 1080
-        align((0.5, 0.5))
     imagemap:
         ground "Creditos.png"
     imagebutton:
@@ -507,50 +502,110 @@ screen imagenes1():
         action [Hide("imagenes1"), With(dissolve)]     
         activate_sound "audio/click.mp3"
 screen imagenes10():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (1).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes10")
 screen imagenes20():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (2).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes20")
 screen imagenes30():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (3).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes30")
 screen imagenes40():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (4).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes40")
 screen imagenes50():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (5).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes50")
 screen imagenes60():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (6).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes60")
 screen imagenes70():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (7).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes70")
 screen imagenes80():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (8).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes80")
 screen imagenes90():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (9).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes90")
 screen imagenes100():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (10).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes100")
 screen imagenes110():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (11).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes110")
 screen imagenes120():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
     imagemap:
         ground"Mockup Imagenes (12).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes120")
