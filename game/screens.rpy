@@ -77,6 +77,8 @@ screen mapabase():
         imagebutton:
             xanchor 0.9
             yanchor 0.1
+            xsize 300
+            ysize 100
             xpos 0.37
             ypos 0.92
             idle "Inicio.png"
@@ -162,6 +164,15 @@ screen tallermultidisciplinario():
         align((0.5, 0.5))
     imagemap:
         ground "Edificio Taller Multidisciplinario.png"
+
+    frame at panel_entra:
+        background None
+        xsize 1456
+        ysize 816
+        xpos 0
+        ypos 0
+        add "Edificio Taller Multidisciplinario(1).png"  # Aquí es la imagen que se anima
+    
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -179,7 +190,6 @@ screen centroacondicionamientofisico():
         align((0.5, 0.5))
     imagemap:  
         ground "Centro de Acondicionamiento Físico.png"
-    
     frame at panel_entra:
         background None
         xsize 1456
