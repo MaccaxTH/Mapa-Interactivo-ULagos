@@ -5,7 +5,7 @@ particularmente acá sí hay codigo que se usó para el mapa interactivo en sí,
 '''
 
 
-## Nombre del juego en forma legible. 
+## Nombre del programa en forma legible. 
 
 define config.name = _("Mapa Interactivo ULagos")
 
@@ -15,7 +15,7 @@ define config.name = _("Mapa Interactivo ULagos")
 define gui.show_name = True
 
 
-## Versión del juego.
+## Versión
 
 define config.version = "1.0"
 
@@ -23,7 +23,7 @@ define gui.about = _p("""
 """)
 
 
-## Nombre breve del juego para ejecutables y directorios en la distribución.
+## Nombre breve del programa para ejecutables y directorios en la distribución.
 
 define build.name = "MapaInteractivoULagos"
 

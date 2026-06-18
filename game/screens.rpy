@@ -19,7 +19,7 @@ transform panel_abajo:
 
 # PAPU INICIO
 
-screen pantallainicio():#las screens son las imagenes que se muestran en el juego.
+screen pantallainicio():# Las screens son las imagenes que se muestran en el programa.
     frame:#esto evita que se pueda hacer click através de la screen.
         modal True
         xsize 1920
