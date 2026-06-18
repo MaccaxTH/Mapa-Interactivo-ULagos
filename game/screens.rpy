@@ -205,7 +205,7 @@ screen centroacondicionamientofisico():
         ypos 0.25
         xsize 180
         ysize 120
-        action OpenURL("https://www.instagram.com/p/C-vAUSoOXvp/?hl=es-la")
+        action OpenURL("https://www.instagram.com/p/DTIUMu5DnWs/?hl=es-la")
     
     imagebutton:
         xanchor 0.9
