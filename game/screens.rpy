@@ -5,22 +5,22 @@ style default:
 
 define custom_dissolve = Dissolve(0.5) # Transición de disolver
 
-transform panel_entra: # Esto es para definir la animacion, es un paneo desde la izquierda
+transform panel_entra: # Esto es para definir la animacion
     xpos -1456 ypos 0
     linear 0.5 xpos 0
 
-transform panel_derecha: # Esto es para definir la animacion, es un paneo desde la derecha
+transform panel_derecha: 
     xpos 1456 ypos 0
     linear 0.5 xpos 0
 
-transform panel_abajo: # Esto es para definir la animacion, es un paneo desde abajo
+transform panel_abajo: 
     xpos 0 ypos 1456
     linear 0.5 ypos 0
 
 # PAPU INICIO
 
-screen pantallainicio():
-    frame:
+screen pantallainicio():#las screens son las imagenes que se muestran en el juego.
+    frame:#esto evita que se pueda hacer click através de la screen.
         modal True
         xsize 1920
         ysize 1080
@@ -32,7 +32,7 @@ screen pantallainicio():
         ypos 360
         idle "PantallaDeInicioCreditos.png"
         hover "PantallaDeInicioCreditos2.png"
-        action [With(custom_dissolve), Jump("creditos1")]
+        action [With(custom_dissolve), Jump("creditos1")]#al interactuar con el botón hace una transicion de disolver.
 
     imagebutton:
         xpos 1302
@@ -61,8 +61,8 @@ screen mapabase():
         ysize 1080
         align((0.5, 0.5))
     imagemap:
-        ground "Mapa.png"
-        hotspot(922, 384, 38, 36) action Jump("edificiobiblioteca1")
+        ground "Mapa.png"#imagen de la pantalla
+        hotspot(922, 384, 38, 36) action Jump("edificiobiblioteca1")#
         hotspot(806, 411, 35, 35) action Jump("vicerrectoria1")
         hotspot(349, 350, 40, 41) action Jump("gimnasios1")
         hotspot(550, 305, 37, 36)action Jump("laboratorios1")
@@ -93,14 +93,14 @@ screen vicerrectoria():
     imagemap:
         ground "Edificio Vicerrectoría.png"
     
-    frame at panel_entra:
+    frame at panel_entra:   #Animación de entrada del panel de información del edificio.
         background None
         xsize 1456
         ysize 816
         xpos 0
         ypos 0
-        add "Edificio Vicerrectoría(1).png"  # Aquí es la imagen que se anima
-    imagebutton:
+        add "Edificio Vicerrectoría(1).png"  
+    imagebutton:# la flecha para salir de la pantalla.
         xanchor 0.9
         yanchor 0.1
         xpos 0.988
@@ -123,7 +123,7 @@ screen centroimar():
         ysize 816
         xpos 0
         ypos 0
-        add "Centro I-Mar(1).png"  # Aquí es la imagen que se anima
+        add "Centro I-Mar(1).png"  
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -147,7 +147,7 @@ screen edificiosalud():
         ysize 816
         xpos 0
         ypos 0
-        add "Edificio de Salud(1).png"  # Aquí es la imagen que se anima
+        add "Edificio de Salud(1).png"  
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -171,7 +171,7 @@ screen tallermultidisciplinario():
         ysize 816
         xpos 0
         ypos 0
-        add "Edificio Taller Multidisciplinario(1).png"  # Aquí es la imagen que se anima
+        add "Edificio Taller Multidisciplinario(1).png"  
     
     imagebutton:
         xanchor 0.9
@@ -196,7 +196,7 @@ screen centroacondicionamientofisico():
         ysize 816
         xpos 0
         ypos 0
-        add "Centro de Acondicionamiento Físico(1).png"  # Aquí es la imagen que se anima
+        add "Centro de Acondicionamiento Físico(1).png"  
     
     imagebutton:
         idle Solid("#0000")
@@ -229,7 +229,7 @@ screen edificioadministrativo():
         ysize 816
         xpos 0
         ypos 0
-        add "Edificio Administrativo del Campus(1).png"  # Aquí es la imagen que se anima
+        add "Edificio Administrativo del Campus(1).png" 
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -253,7 +253,7 @@ screen edificiobiblioteca():
         ysize 816
         xpos 0
         ypos 0
-        add "Edificio Biblioteca(1).png"  # Aquí es la imagen que se anima
+        add "Edificio Biblioteca(1).png" 
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -277,7 +277,7 @@ screen gimnasios():
         ysize 816
         xpos 0
         ypos 0
-        add "Gimnasios(1).png"  # Aquí es la imagen que se anima
+        add "Gimnasios(1).png" 
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -301,7 +301,7 @@ screen laboratorios():
         ysize 816
         xpos 0
         ypos 0
-        add "Laboratorios(1).png"  # Aquí es la imagen que se anima
+        add "Laboratorios(1).png"
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -325,7 +325,7 @@ screen salondefisica():
         ysize 816
         xpos 0
         ypos 0
-        add "Salon de Física(1).png"  # Aquí es la imagen que se anima
+        add "Salon de Física(1).png" 
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -398,7 +398,7 @@ screen casino():
         ysize 816
         xpos 0
         ypos 0
-        add "EdificioPrincipalCasinoPanel.png"  # Aquí es la imagen que se anima
+        add "EdificioPrincipalCasinoPanel.png"
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -422,7 +422,7 @@ screen superior():
         ysize 816
         xpos 0
         ypos 0
-        add "EdificioPrincipalPisosSuperioresPanel.png"  # Aquí es la imagen que se anima
+        add "EdificioPrincipalPisosSuperioresPanel.png"  
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -446,7 +446,7 @@ screen estarII():
         ysize 816
         xpos 0
         ypos 0
-        add "EdificioPrincipalSaladeEstar2Panel.png"  # Aquí es la imagen que se anima
+        add "EdificioPrincipalSaladeEstar2Panel.png"  
     imagebutton:
         xanchor 0.9
         yanchor 0.1
@@ -470,7 +470,7 @@ screen pasillo():
         ysize 816
         xpos 0
         ypos 0
-        add "EdificioPrincipalPasilloPanel.png"  # Aquí es la imagen que se anima
+        add "EdificioPrincipalPasilloPanel.png"  
     imagebutton:
         xanchor 0.9
         yanchor 0.1

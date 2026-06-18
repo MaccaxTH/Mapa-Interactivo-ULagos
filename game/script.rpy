@@ -4,16 +4,15 @@ define custom_fade = Fade(0.1, 0.2, 0.1) # Lo que tarda en llegar a negro / Lo q
 
 define custom_dissolve = Dissolve(0.5)
 
-# El juego comienza aquí.
-label main_menu:
+label main_menu:#etiquetas para identificar el nombre de las pantallas para llamarlas en las acciones en screens.rpy.
     return
     $ _skipping = False 
 label start:
-    show screen pantallainicio with fade
+    show screen pantallainicio with fade#transición
     $ renpy.pause (hard=True)
     $ _skipping = False
 label mapabase:
-    show screen mapabase with custom_dissolve
+    show screen mapabase with custom_dissolve#transición.
     $ renpy.pause (hard=True)
     $ _skipping = False
 label vicerrectoria1:
