@@ -30,22 +30,22 @@ screen pantallainicio():# Las screens son las imagenes que se muestran en el pro
     imagebutton:
         xpos 1355
         ypos 360
-        idle "PantallaDeInicioCreditos.png"
-        hover "PantallaDeInicioCreditos2.png"
+        idle "BotonCreditos.png"
+        hover "BotonCreditos2.png"
         action [With(custom_dissolve), Jump("creditos1")]#al interactuar con el botón hace una transicion de disolver.
 
     imagebutton:
         xpos 1302
         ypos 455
-        idle "PantallaDeInicioMapa.png"
-        hover "PantallaDeInicioMapa2.png"
+        idle "BotonMapa.png"
+        hover "BotonMapa2.png"
         action [With(custom_dissolve), Jump("mapabase")]
 
     imagebutton:
         xpos 1355
         ypos 605
-        idle "PantallaDeInicioImagenes.png"
-        hover "PantallaDeInicioImagenes2.png"
+        idle "BotonGaleria.png"
+        hover "BotonGaleria2.png"
         action [With(custom_dissolve), Jump("imagenes1")]
 
     imagebutton:
@@ -72,7 +72,7 @@ screen mapabase():
         hotspot(211, 689, 39, 36)action Jump("tallermultidisciplinario1")
         hotspot(162, 360, 38, 39)action Jump("salondefisica1")
         hotspot(998, 875, 42, 41)action Jump("centroimar1")
-        hotspot(442, 1002, 280, 74)action [Hide("mapabase"), With(dissolve)]
+        hotspot(442, 1002, 280, 74)action [Hide("mapabase"), With(custom_dissolve)]
         hotspot(821, 294, 38, 38)action Jump("edificioprincipal1")
         imagebutton:
             xanchor 0.9
@@ -83,7 +83,7 @@ screen mapabase():
             ypos 0.92
             idle "Inicio.png"
             hover"Iniciopapu.png"
-            action [Hide("mapabase"), With(dissolve)]
+            action [Hide("mapabase"), With(custom_dissolve)]
 screen vicerrectoria():
     frame:
         modal True
@@ -107,7 +107,7 @@ screen vicerrectoria():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("vicerrectoria")
+        action [Hide("vicerrectoria"), With(custom_dissolve)]
 screen centroimar():
     frame:
         modal True
@@ -131,7 +131,7 @@ screen centroimar():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("centroimar")
+        action [Hide("centroimar"), With(custom_dissolve)]
 screen edificiosalud():
     frame:
         modal True
@@ -155,7 +155,7 @@ screen edificiosalud():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("edificiosalud"), With(dissolve)]
+        action [Hide("edificiosalud"), With(custom_dissolve)]
 screen tallermultidisciplinario():
     frame:
         modal True
@@ -180,7 +180,7 @@ screen tallermultidisciplinario():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("tallermultidisciplinario"), With(dissolve)]
+        action [Hide("tallermultidisciplinario"), With(custom_dissolve)]
 
 screen centroacondicionamientofisico():
     frame:
@@ -214,7 +214,7 @@ screen centroacondicionamientofisico():
         ypos 0.009
         idle "flecha1.png"
         hover "flecha2.png"
-        action [Hide("centroacondicionamientofisico"), With(dissolve)]
+        action [Hide("centroacondicionamientofisico"), With(custom_dissolve)]
 screen edificioadministrativo():
     frame:
         modal True
@@ -237,7 +237,7 @@ screen edificioadministrativo():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("edificioadministrativo")
+        action [Hide("edificioadministrativo"), With(custom_dissolve)]
 screen edificiobiblioteca():
     frame:
         modal True
@@ -261,7 +261,7 @@ screen edificiobiblioteca():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("edificiobiblioteca")
+        action [Hide("edificiobiblioteca"), With(custom_dissolve)]
 screen gimnasios():
     frame:
         modal True
@@ -285,7 +285,7 @@ screen gimnasios():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("gimnasios")
+        action [Hide("gimnasios"), With(custom_dissolve)]
 screen laboratorios():
     frame:
         modal True
@@ -309,7 +309,7 @@ screen laboratorios():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("laboratorios")
+        action [Hide("laboratorios"), With(custom_dissolve)]
 screen salondefisica():
     frame:
         modal True
@@ -333,7 +333,7 @@ screen salondefisica():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action Hide("salondefisica")
+        action [Hide("salondefisica"), With(custom_dissolve)]
 
 screen creditos():
     frame:
@@ -350,7 +350,7 @@ screen creditos():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("creditos"), With(dissolve)]
+        action [Hide("creditos"), With(custom_dissolve)]
 
     imagebutton:
         xanchor 0.9
@@ -381,7 +381,7 @@ screen edificioprincipal():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("edificioprincipal"), With(dissolve)]
+        action [Hide("edificioprincipal"), With(custom_dissolve)]
 
     
 screen casino():
@@ -406,7 +406,7 @@ screen casino():
         ypos 0.009
         idle "flecha1.png"
         hover"flecha2.png"
-        action [Hide("casino"), With(dissolve)]
+        action [Hide("casino"), With(custom_dissolve)]
 
 screen superior():
     frame:
@@ -430,7 +430,7 @@ screen superior():
         ypos 0.009
         idle "flecha1.png"
         hover "flecha2.png"
-        action [Hide("superior"), With(dissolve)]
+        action [Hide("superior"), With(custom_dissolve)]
 
 screen estarII():
     frame:
@@ -454,7 +454,7 @@ screen estarII():
         ypos 0.009
         idle "flecha1.png"
         hover "flecha2.png"
-        action [Hide("estarII"), With(dissolve)]
+        action [Hide("estarII"), With(custom_dissolve)]
 
 screen pasillo():
     frame:
@@ -478,7 +478,7 @@ screen pasillo():
         ypos 0.009
         idle "flecha1.png"
         hover "flecha2.png"
-        action [Hide("pasillo"), With(dissolve)]
+        action [Hide("pasillo"), With(custom_dissolve)]
 
 screen imagenes1():
     frame:
@@ -509,7 +509,7 @@ screen imagenes1():
         ypos 0.92
         idle "Inicio.png"
         hover "InicioPapu.png" 
-        action [Hide("imagenes1"), With(dissolve)]     
+        action [Hide("imagenes1"), With(custom_dissolve)]     
         activate_sound "audio/click.mp3"
 screen imagenes10():
     frame:
