@@ -371,10 +371,10 @@ screen edificioprincipal():
         align((0.5, 0.5))
     imagemap:
         ground "Edificio Principal_ Mapa.png"
-        hotspot(997, 752, 34, 32)action Jump("pasillo1")
-        hotspot(812, 693, 37, 38)action Jump("casino1")
-        hotspot(755, 694, 41, 34)action Jump("superior1")
-        hotspot(486, 674, 45, 35)action Jump("estarII1")
+        hotspot(938, 716, 42, 36)action Jump("pasillo1")
+        hotspot(737, 644, 39, 37)action Jump("casino1")
+        hotspot(679, 641, 43, 40)action Jump("superior1")
+        hotspot(397, 612, 36, 37)action Jump("estarII1")
         
     imagebutton:
         xanchor 0.9
