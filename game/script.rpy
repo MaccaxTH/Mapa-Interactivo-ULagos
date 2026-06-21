@@ -131,5 +131,7 @@ label imagenes12w:
     show screen imagenes120 with custom_dissolve
     $ renpy.pause (hard=True)
     $ _skipping = False
-
-
+label historia:
+    show screen historia with custom_dissolve
+    $ renpy.pause (hard=True)
+    $ _skipping = False

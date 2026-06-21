@@ -28,31 +28,33 @@ screen pantallainicio():# Las screens son las imagenes que se muestran en el pro
     add "PantallaDeInicio.png"
 
     imagebutton:
-        xpos 1355
-        ypos 360
         idle "BotonCreditos.png"
         hover "BotonCreditos2.png"
+        focus_mask True # Esto quita la transparencia de la imagen
         action [With(custom_dissolve), Jump("creditos1")]#al interactuar con el botón hace una transicion de disolver.
 
     imagebutton:
-        xpos 1302
-        ypos 455
         idle "BotonMapa.png"
         hover "BotonMapa2.png"
+        focus_mask True
         action [With(custom_dissolve), Jump("mapabase")]
 
     imagebutton:
-        xpos 1355
-        ypos 605
         idle "BotonGaleria.png"
         hover "BotonGaleria2.png"
+        focus_mask True
         action [With(custom_dissolve), Jump("imagenes1")]
 
     imagebutton:
-        xpos 1355
-        ypos 850
-        idle "PantallaDeInicioSalir.png"
-        hover "PantallaDeInicioSalir2.png"
+        idle "BotonHistoria.png"
+        hover "BotonHistoria2.png"
+        focus_mask True
+        action [With(custom_dissolve), Jump("historia")]
+
+    imagebutton:
+        idle "BotonSalir.png"
+        hover "BotonSalir2.png"
+        focus_mask True
         action [With(fade), Quit(confirm=False)]
 screen mapabase():
     frame:
@@ -619,3 +621,19 @@ screen imagenes120():
     imagemap:
         ground"Mockup Imagenes (12).png"
         hotspot(1468, 80, 84, 79)action Hide("imagenes120")
+screen historia():
+    frame:
+        modal True
+        xsize 1920
+        ysize 1080
+        align((0.5, 0.5))
+    imagemap:
+        ground "historia.png"
+    imagebutton:
+        xanchor 0.9
+        yanchor 0.1
+        xpos 0.988
+        ypos 0.009
+        idle "flecha1.png"
+        hover "flecha2.png"
+        action [Hide("historia"), With(custom_dissolve)]
