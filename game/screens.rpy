@@ -93,7 +93,7 @@ screen vicerrectoria():
         ysize 1080
         align((0.5, 0.5))
     imagemap:
-        ground "Edificio Vicerrectoría.png"
+        ground "Edificio Vicerrectoria.png"
     
     frame at panel_entra:   #Animación de entrada del panel de información del edificio.
         background None
@@ -101,7 +101,7 @@ screen vicerrectoria():
         ysize 816
         xpos 0
         ypos 0
-        add "Edificio Vicerrectoría(1).png"  
+        add "Edificio Vicerrectoria(1).png"  
     imagebutton:# la flecha para salir de la pantalla.
         xanchor 0.9
         yanchor 0.1
@@ -191,14 +191,14 @@ screen centroacondicionamientofisico():
         ysize 1080
         align((0.5, 0.5))
     imagemap:  
-        ground "Centro de Acondicionamiento Físico.png"
+        ground "Centro de Acondicionamiento Fisico.png"
     frame at panel_entra:
         background None
         xsize 1456
         ysize 816
         xpos 0
         ypos 0
-        add "Centro de Acondicionamiento Físico(1).png"  
+        add "Centro de Acondicionamiento Fisico(1).png"  
     
     imagebutton:
         idle Solid("#0000")
@@ -319,7 +319,7 @@ screen salondefisica():
         ysize 1080
         align((0.5, 0.5))
     imagemap:
-        ground "Salon de Física.png"
+        ground "Salon de Fisica.png"
     
     frame at panel_entra:
         background None
@@ -327,7 +327,7 @@ screen salondefisica():
         ysize 816
         xpos 0
         ypos 0
-        add "Salon de Física(1).png" 
+        add "Salon de Fisica(1).png" 
     imagebutton:
         xanchor 0.9
         yanchor 0.1
