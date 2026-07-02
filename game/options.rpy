@@ -1,5 +1,9 @@
-﻿'''
-Todo este codigo es el codigo base para el funcionamiento normal del motor de Ren'py, no afecta la funcionalidad ni
+﻿# Icono del programa
+
+define config.window_icon = "iconopapu.png"
+
+'''
+Todo este codigo para abajo es el codigo base para el funcionamiento normal del motor de Ren'py, no afecta la funcionalidad ni
 el aspecto del mapa interactivo, pero son necesarios de mantener para que Ren'py pueda funcionar y no crashee, aunque
 particularmente acá sí hay codigo que se usó para el mapa interactivo en sí, los "##" indican estos.
 '''
@@ -83,7 +87,3 @@ init python:
     build.documentation('*.txt')
 
 define config.keymap = {k: v for k, v in config.keymap.items() if k != 'game_menu'}
-
-#icono del programa
-
-define config.window_icon = "iconopapu.png"
