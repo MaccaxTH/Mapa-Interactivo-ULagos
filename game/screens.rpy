@@ -63,7 +63,8 @@ screen mapabase():
         ysize 1080
         align((0.5, 0.5))
     imagemap:
-        ground "Mapa.png"#imagen de la pantalla
+        ground "Mapa.png"
+        # Botones del mapa
         hotspot(922, 384, 38, 36) action Jump("edificiobiblioteca1")#
         hotspot(806, 411, 35, 35) action Jump("vicerrectoria1")
         hotspot(349, 350, 40, 41) action Jump("gimnasios1")
@@ -76,6 +77,19 @@ screen mapabase():
         hotspot(998, 875, 42, 41)action Jump("centroimar1")
         hotspot(442, 1002, 280, 74)action [Hide("mapabase"), With(custom_dissolve)]
         hotspot(821, 294, 38, 38)action Jump("edificioprincipal1")
+#Leyenda ((Debido a la retroalimentación de los usuarios, los cuales repetidamente intentaban presionar los botones de la leyenda))
+        hotspot (1260, 205, 330, 45) action Jump("edificioprincipal1")
+        hotspot (1260, 250, 330, 45) action Jump("vicerrectoria1")
+        hotspot (1260, 295, 330, 45) action Jump("edificiobiblioteca1")
+        hotspot (1260, 340, 330, 45) action Jump("gimnasios1")
+        hotspot (1260, 385, 330, 45) action Jump("laboratorios1")
+        hotspot (1260, 430, 330, 45) action Jump("edificiosalud1")
+        hotspot (1260, 475, 360, 45) action Jump("centroacondicionamientofisico1")
+        hotspot (1260, 520, 360, 45) action Jump("edificioadministrativo1")
+        hotspot (1260, 565, 390, 45) action Jump("tallermultidisciplinario1")
+        hotspot (1260, 610, 390, 45) action Jump("salondefisica1")
+        hotspot (1260, 655, 330, 45) action Jump("centroimar1")
+
         imagebutton:
             xanchor 0.9
             yanchor 0.1
