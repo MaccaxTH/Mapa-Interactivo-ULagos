@@ -5,15 +5,15 @@ style default:
 
 define custom_dissolve = Dissolve(0.5) # Transición de disolver
 
-transform panel_entra: # Esto es para definir la animacion
+transform panel_entra: # Esto es para definir la animacion y entre por la izquierda
     xpos -1456 ypos 0
     linear 0.5 xpos 0
 
-transform panel_derecha: 
+transform panel_derecha: # Entra por la derecha
     xpos 1456 ypos 0
     linear 0.5 xpos 0
 
-transform panel_abajo: 
+transform panel_abajo: # Entra por abajo
     xpos 0 ypos 1456
     linear 0.5 ypos 0
 
